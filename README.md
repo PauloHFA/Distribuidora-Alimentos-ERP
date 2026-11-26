@@ -1,6 +1,6 @@
-# 🏢 Sistema Web de Gestão Interna para Distribuidora de Alimentos (ERP)
+# 🏢 Distribuidora-Alimentos-ERP (Gestão Interna)
 
-> Sistema web de gestão operacional, estoque por livro-razão (ledger), faturamento, controladoria financeira (DRE), controle de acesso por papel (RBAC) e central de relatórios executivos para distribuidoras de alimentos.
+> Sistema web de gestão operacional (ERP), estoque por livro-razão (ledger), faturamento, controladoria financeira (DRE), controle de acesso por papel (RBAC) e central de relatórios executivos para distribuidoras de alimentos.
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.4-blue.svg)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18.3-61dafb.svg)](https://reactjs.org/)
@@ -110,8 +110,8 @@ Diferente de sistemas com CRUDs genéricos, a aplicação foi construída sobre 
 
 ### 1. Clonar o Repositório
 ```bash
-git clone https://github.com/PauloHFA/Projeto-Freelancer-Sistema-Web-de-Gest-o-Interna-para-Distribuidora-de-Alimentos.git
-cd Projeto-Freelancer-Sistema-Web-de-Gest-o-Interna-para-Distribuidora-de-Alimentos
+git clone https://github.com/PauloHFA/Distribuidora-Alimentos-ERP.git
+cd Distribuidora-Alimentos-ERP
 ```
 
 ### 2. Inicializar o Banco de Dados (PostgreSQL via Docker)

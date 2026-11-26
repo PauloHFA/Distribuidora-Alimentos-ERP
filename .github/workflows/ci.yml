@@ -1,0 +1,33 @@
+name: Monorepo CI — ERP Distribuidora
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Instalar Dependências do Monorepo
+        run: npm ci
+
+      - name: Executar Testes das Regras de Negócio (Backend)
+        run: npm run test
+
+      - name: Compilar Backend (TypeScript)
+        run: npm run build:backend
+
+      - name: Compilar Frontend (TypeScript + Vite)
+        run: npm run build:frontend
